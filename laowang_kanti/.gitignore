@@ -1,0 +1,15 @@
+*.pyc
+!.gitignore
+log/
+export_pack/
+node_modules
+1
+2
+*.swp
+*.swo
+*.log
+*.tgz
+manage_staging.py
+evaluatesys/wsgi_staging.py
+evaluatesys/settings_staging.py
+.DS_Store

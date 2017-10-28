@@ -1,0 +1,11 @@
+.header {
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
+}
+.user-name {
+	margin-left: 10px;
+	margin-right: 10px;
+}

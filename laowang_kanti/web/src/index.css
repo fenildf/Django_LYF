@@ -1,0 +1,14 @@
+@import 'normalize.css';
+
+:global(.hidden) {
+	display: none; 
+}
+:global(.ant-select) {
+	width: auto!important;
+}
+:global(.poem_references) {
+	display: none;
+}
+:global(.poem_sub_title) {
+	font-weight: bold;
+}
