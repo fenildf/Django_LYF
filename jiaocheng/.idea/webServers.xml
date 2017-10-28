@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8b35c3a5-88f2-4b9d-805f-0a9d04a37df3" name="jiaocheng" url="http://10.170.251.183">
+        <fileTransfer host="10.170.251.183" port="22" rootFolder="/home/liyanfeng/Django_LYF/jiaocheng" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

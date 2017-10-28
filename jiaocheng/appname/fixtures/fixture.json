@@ -1,0 +1,17 @@
+[
+  {
+    "model": "appname.person",
+    "pk": 1,
+    "fields": {
+      "name": "John",
+      "age": "23"
+    }
+  },
+  {
+    "model": "appname.person",
+    "pk": 2,
+    "fields": {
+      "name": "Paul",
+      "age": "25"
+    }
+  }]

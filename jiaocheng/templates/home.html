@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django教程</title>
+</head>
+<body>
+    <p><a href= " {% url 'add_number_second' 4 5 %} ">link</a></p>
+    <hr/>
+    {{ string }}
+    <hr/>
+    <h3><a href= " {% url 'add_number' %} ">link2</a></h3>
+    <tr>
+        <td>
+            {% for i in TutorialList %}
+                {{ i }}
+            {% endfor %}
+        </td>
+    </tr>
+    <hr/>
+    <p>
+        {% for keys ,values in info_dict.items %}
+            <td>{{ keys }} : {{ values }}<td/>
+        {% endfor %}
+    </p>
+    <p>
+        {% for item in List %}
+            {{ item }}{% if not forloop.last %},{% endif %}
+        {% endfor %}
+    </p>
+    <ul>
+        {% for athlete in athlete_list %}
+            <li>{{ athlete.name }}</li>
+        {% empty %}
+            <li>抱歉，列表为空</li>
+        {% endfor %}
+    </ul>
+    <p>
+        {% if request.user.is_authenticated %}
+            {{ request.user.username }}，您好！
+        {% else %}
+            请登陆，这里放登陆链接
+        {% endif %}
+    </p>
+    <hr/>
+    <ul>
+        <li>
+            <a href="{{ request.path }}?{{ request.GET.urlencode }}&delete=1">当前网址加参数 delete</a>
+        </li>
+    </ul>
+</body>
+</html>
