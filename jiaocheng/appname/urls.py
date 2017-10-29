@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'/add_new/(\d+)/(\d+)/$', views.old_add2_redirect),
     url(r'/add_old/(\d+)/(\d+)/$', views.old_add_redirect),
     url(r'home?$', views.home, name= 'home'),
+    url(r'home?$', views.home, name= 'home'),
 ]

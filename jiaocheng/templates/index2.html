@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action = "/todo/add/" method = "POST">
+        {% csrf_token %}
+        New: <input type = "text" name = "task_msg" />
+        <input type = "submit" value = "Add" />
+    </form>
+
+    {% if all_todo_list %}
+        {% for entry in all_todo_list %}
+            <p> {{ entry.task }}
+
+            </p>
+        {% endfor %}
+    {% else %}
+        <p>No todo entry are available.</p>
+    {% endif %}
+</body>
+</html>
